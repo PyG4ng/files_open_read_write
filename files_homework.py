@@ -32,7 +32,6 @@ def get_data(file):
 
     return data
 
-# pprint(get_data(DATA))
 
 def make_cook_book(data_ : list) -> dict:
     """Create a dictionnary out of a list. In the dictionnary each key has a list of dictionnary
@@ -47,19 +46,14 @@ def make_cook_book(data_ : list) -> dict:
     for i in range(len(data_)):
         ingredients = []
         a, b, *args = data_[i]
-        # args should contain strings with two " | " separators inside like "Bor "
+        # args should contain strings with two " | " separators inside like "Egg | 1 | pc"
         for elem in args:
             massif = elem.split(' | ')
             ingredients.append(dict(ingredient_name = massif[0], quantity = massif[1], measure = massif[2]))
         book_[a] = ingredients
     return book_
         
-# cook_book =  make_cook_book(get_data(DATA))
-# pprint(cook_book)
-
-# with open('recipes_.json', 'w', encoding='utf-8-sig') as f:
-#     json.dump(cook_book, f, ensure_ascii=False, indent=4)
-
+        
 def get_shop_list_by_dishes(dishes : list, person_count : int) -> dict:
     """Create a dictionnary of needed ingredients to cook dishes for a number of person
 
