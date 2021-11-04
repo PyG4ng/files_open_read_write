@@ -1,0 +1,26 @@
+﻿{
+    "Картофель": {
+        "quantity": 2,
+        "measure": "кг"
+    },
+    "Чеснок": {
+        "quantity": 6,
+        "measure": "зубч"
+    },
+    "Сыр гауда": {
+        "quantity": 200,
+        "measure": "г"
+    },
+    "Яйцо": {
+        "quantity": 4,
+        "measure": "шт"
+    },
+    "Молоко": {
+        "quantity": 200,
+        "measure": "мл"
+    },
+    "Помидор": {
+        "quantity": 4,
+        "measure": "шт"
+    }
+}
