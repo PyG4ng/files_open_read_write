@@ -68,7 +68,7 @@ def get_shop_list_by_dishes(dishes: list, person_count: int) -> dict:
 
     Args:
         dishes (list): list of dishes
-        person_count (int): Number of person to for
+        person_count (int): Number of person to cook for
 
     Returns: Dictionary of ingredients
     """
